@@ -1,0 +1,14 @@
+# Python venv
+.venv/
+# user files
+my_US_stocks.csv
+# caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+# editor
+.vscode/
