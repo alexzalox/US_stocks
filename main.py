@@ -7,32 +7,7 @@ import pandas as pd
 import yfinance as yf
 
 DEFAULT_CSV = "US_stocks.csv"
-SAMPLE_STOCKS = [
-    ("ABAT", 3.28),
-    ("LXRX", 1.2),
-    ("NITO", 5.21),
-    ("BOXL", 5.45),
-    ("AREC", 2.43),
-    ("IONQ", 44.89),
-    ("ONDS", 7.2),
-    ("QRVO", 96.05),
-    ("TMDX", 127.48),
-    ("TSLA", 423.0),
-    ("UEC", 12.6),
-    ("UUUU", 13.67),
-    ("ORCL", 304.81),
-    ("LEU", 229.97),
-    ("GOOG", 202.13),
-    ("INTC", 31.38),
-    ("FIGR", 38.89),
-    ("CEG", 332.45),
-    ("CHYM", 25.28),
-    ("AAPL", 233.91),
-    ("QBTS", 17.8),
-    ("RGTI", 19.14),
-    ("AVAV", 286.3),
-    ("RCAT", 11.45),
-]
+SAMPLE_STOCKS = [("AAPL", 233.91)]
 
 
 def ensure_sample(path: str) -> None:

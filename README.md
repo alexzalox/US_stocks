@@ -16,13 +16,13 @@ python -m venv .venv
 ```
 2. 安裝相依套件
 ```powershell
-pip install -r d:\workspace\US_stock\requirements.txt
+pip install -r d:\<your_project_dir>\requirements.txt
 ```
 3. 執行（預設讀取 US_stocks.csv）
 ```powershell
-python d:\workspace\US_stock\main.py
+python d:\<your_project_dir>\main.py
 # 或指定檔案
-python d:\workspace\US_stock\main.py myfile.csv
+python d:\<your_project_dir>\main.py myfile.csv
 ```
 
 備註
