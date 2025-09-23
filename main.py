@@ -46,6 +46,13 @@ def main():
     df_in = df_in.dropna(subset=["Ticker", "Cost"])
     df_in["Ticker"] = df_in["Ticker"].str.strip().str.upper()
 
+    # 去除重複的 Ticker，並提示使用者
+    dup = df_in[df_in.duplicated(subset=["Ticker"], keep=False)]
+    if not dup.empty:
+        unique_dup_tickers = sorted(dup["Ticker"].unique())
+        print(f"警告：輸入檔包含重複的 Ticker（將只保留每個 Ticker 的第一筆）：{', '.join(unique_dup_tickers)}")
+    df_in = df_in.drop_duplicates(subset=["Ticker"], keep="first")
+
     rows = []
     for _, r in df_in.iterrows():
         ticker = r["Ticker"]
